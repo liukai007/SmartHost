@@ -11,11 +11,5 @@ func main() {
 			"message": "pong",
 		})
 	})
-	r.GET("/ping1", func(c *gin.Context) {
-		//输出json结果给调用方
-		c.JSON(200, gin.H{
-			"message": "pong1",
-		})
-	})
 	r.Run(":7777") // listen and serve on 0.0.0.0:8080
 }
